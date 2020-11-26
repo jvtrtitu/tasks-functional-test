@@ -91,7 +91,7 @@ public class TasksTest {
 				driver.findElement(By.xpath("//input[@id='saveButton']")).click();
 				//validar mensagem de sucesso
 				String resposta = driver.findElement(By.xpath("//p[@id='message']")).getText();
-				Assert.assertEquals("Due date  must not be in past", resposta);
+				Assert.assertEquals("Due date must not be in past", resposta);
 			}finally {
 				//fechar o browser
 				driver.quit();	

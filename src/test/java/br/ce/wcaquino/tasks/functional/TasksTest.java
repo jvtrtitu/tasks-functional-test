@@ -53,7 +53,7 @@ public class TasksTest {
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='task']")));
 			driver.findElement(By.xpath("//input[@id='task']")).sendKeys("Teste Automatizado");
 			//escrever a data
-			driver.findElement(By.xpath("//input[@id='dueDate']")).sendKeys("27/11/2020");
+			driver.findElement(By.xpath("//input[@id='dueDate']")).sendKeys("30/11/2020");
 			//clicar em salvar 
 			driver.findElement(By.xpath("//input[@id='saveButton']")).click();
 			//validar mensagem de sucesso
@@ -89,7 +89,7 @@ public class TasksTest {
 			
 			//escrever a data
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='dueDate']")));
-			driver.findElement(By.xpath("//input[@id='dueDate']")).sendKeys("27/11/2020");
+			driver.findElement(By.xpath("//input[@id='dueDate']")).sendKeys("30/11/2020");
 			//clicar em salvar 
 			driver.findElement(By.xpath("//input[@id='saveButton']")).click();
 			//validar mensagem de sucesso
